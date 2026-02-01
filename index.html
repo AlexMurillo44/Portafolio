@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="title">Alejandro Murillo Díaz - Desarrollador de Software Junior</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+    
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle"> 
+                
+                <a href="#" class="logo" data-key="name">Alejandro Murillo Díaz</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#about" data-key="nav_about">Sobre Mí</a></li>
+                    <li><a href="#skills" data-key="nav_skills">Habilidades</a></li>
+                    <li><a href="#projects" data-key="nav_projects">Proyectos</a></li>
+                    <li><a href="#experience" data-key="nav_experience">Experiencia</a></li>
+                    <li><a href="#certifications" data-key="nav_certifications">Certificaciones</a></li>
+                    <li><a href="#contact" class="btn-primary" data-key="nav_contact">Contacto</a></li>
+
+                    <li class="lang-switcher-item">
+                        <div class="lang-switcher">
+                            <button data-lang="es" class="active">ES</button>
+                            <button data-lang="en">EN</button>
+                            <button data-lang="fr">FR</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <label for="nav-toggle" class="hamburger">
+                    <span></span><span></span><span></span>
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-left">
+                        <picture class="hero-img-container">
+                            <source srcset="pictures/perfil_c.jpg" media="(max-width: 480px)">
+                            
+                            <source srcset="pictures/perfil_m.jpg" media="(max-width: 768px)">
+                            
+                            <img src="pictures/perfil_g.jpg" alt="Foto profesional de Alejandro Murillo Díaz" class="hero-img" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="hero-right">
+                        <h1>
+                            <span data-key="hero_greeting">Hola, soy</span> <span data-key="name">Alejandro Murillo Díaz</span>
+                        </h1>
+                        <p class="typed-title">
+                            <span data-key="hero_static_prefix">Desarrollador Junior</span>
+                            <span class="typed-text"></span>
+                        </p>
+                        <p data-key="hero_subtitle">Estudiante de TI en UPSIN Sinaloa | Java, C/C++, Kotlin, Web, Redes</p>
+                        <div class="hero-buttons">
+                            <a href="cvs/CV Sin Foto.pdf" download class="btn-primary" data-key="download_cv">Descargar CV</a>
+                            <a href="cvs/CV Con Foto.pdf" download class="btn-secondary" data-key="download_cv_photo">Descargar CV con Foto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-key="about_title">Sobre Mí</h2>
+                <p data-key="about_text">Soy estudiante de Tecnologías de la Información en UPSIN Sinaloa, 
+                    cursando el 4.º Cuatrimestre, con enfoque en el Desarrollo de Software. A lo largo de mi 
+                    formación académica he trabajado con diferentes proyectos usando lenguajes como Java, C/C++, Kotlin,
+                    HTML/CSS, SQL, adémas cuento con conocimiento básico de redes haciendo diferentes prácticas en Cisco Packet Tracer
+                    y prácticas fisicas sencillas. 
+                    Con cursos terminados de Cisco Net Academy.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-key="skills_title">Habilidades Técnicas</h2>
+                <div class="skills-category">
+                    <h3 data-key="skills_languages">Lenguajes</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C/C++</span>
+                        <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="skill-tag"><i class="devicon-kotlin-plain colored"></i> Kotlin</span>
+                        <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML5</span>
+                        <span class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS3</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 data-key="skills_frameworks">Frameworks / Diseño</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-figma-plain colored"></i> Figma</span>
+                        <span class="skill-tag"><i class="devicon-wix-plain colored"></i> Wix</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 data-key="skills_tools">Herramientas / IDE's / Bases de Datos</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-git-plain colored"></i> Git</span>
+                        <span class="skill-tag"><i class="devicon-eclipse-plain colored"></i> Eclipse</span>
+                        <span class="skill-tag"><i class="devicon-apache-plain colored"></i> NetBeans</span>
+                        <span class="skill-tag"><i class="devicon-androidstudio-plain colored"></i> Android Studio</span>
+                        <span class="skill-tag"><i class="devicon-cisco-plain colored"></i> Packet Tracer</span>
+                        <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-tag"><i class="devicon-sqlyog-plain colored"></i> SQLYog</span>
+                        <span class="skill-tag"><i class="devicon-visualstudio-plain colored"></i> Dev-C++</span>
+                        <span class="skill-tag"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                        <span class="skill-tag"><i class="devicon-sublimetext-plain colored"></i> Sublime Text</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-key="projects_title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    
+                    <article class="project-card">
+                        <img 
+                            src="projects/dapperdye_g.jpg" 
+                            srcset="projects/dapperdye_c.jpg 1x,
+                                    projects/dapperdye_m.jpg 1.5x,
+                                    projects/dapperdye_g.jpg 2x" 
+                            alt="DapperDye"
+                            loading="lazy">
+                        <div class="project-info">
+                            <h3 data-key="proj_1_h3">DapperDye - Asistente de ropa</h3>
+                            <p data-key="proj_1_desc">Sistema asesor de vestimenta. (Web para PC)</p>
+                            <div class="tech-stack">
+                                <span data-key="tech_stack_1">HTML5/CSS3, JavaScript, MySQL</span>
+                            </div>
+                            <a href="https://dapperdye.netlify.app/" target="_blank" class="btn-secondary" data-key="view_project">Ver</a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img 
+                            id="charles" 
+                            src="projects/charles_g.jpg"
+                            srcset="projects/charles_c.jpg 1x,
+                                    projects/charles_m.jpg 1.5x,
+                                    projects/charles_g.jpg 2x" 
+                            alt="Sitio Charles"
+                            loading="lazy">
+                        <div class="project-info">
+                            <h3 data-key="proj_2_h3">Sitio web básico</h3>
+                            <p data-key="proj_2_desc">Sitio sobre Charles Oliveira (Web para PC)</p>
+                            <div class="tech-stack">
+                                <span data-key="tech_stack_2">HTML5/CSS3</span>
+                            </div>
+                            <a href="https://charlesdobronx.netlify.app/" target="_blank" class="btn-secondary" data-key="view_project">Ver</a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img 
+                            id="movil" 
+                            src="projects/pmovil_g.jpg"
+                            srcset="projects/pmovil_c.jpg 1x,
+                                    projects/pmovil_m.jpg 1.5x,
+                                    projects/pmovil_g.jpg 2x" 
+                            alt="Sitio Programación Móvil"
+                            loading="lazy">
+                        <div class="project-info">
+                            <h3 data-key="proj_3_h3">Sitio web didactico sobre la materia programación móvil</h3>
+                            <p data-key="proj_3_desc">Sitio web de materia escolar</p>
+                            <div class="tech-stack">
+                                <span data-key="tech_stack_2">HTML5/CSS3</span>
+                            </div>
+                            <a href="https://programacionmovil.netlify.app/" target="_blank" class="btn-secondary" data-key="view_project">Ver</a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img 
+                            id="laberinto" 
+                            src="projects/laberinto_g.jpg"
+                            srcset="projects/laberinto_c.jpg 1x,
+                                    projects/laberinto_m.jpg 1.5x,
+                                    projects/laberinto_g.jpg 2x" 
+                            alt="Laberinto"
+                            loading="lazy">
+                        <div class="project-info">
+                            <h3 data-key="proj_4_h3">Sitio web didactico de un laberinto</h3>
+                            <p data-key="proj_4_desc">Laberinto</p>
+                            <div class="tech-stack">
+                                <span data-key="tech_stack_2">HTML5/CSS3</span>
+                            </div>
+                            <a href="https://laberintopage.netlify.app" target="_blank" class="btn-secondary" data-key="view_project">Ver</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="timeline-card">
+                    <h2 class="section-title" data-key="experience_title">Experiencia y Formación</h2>
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <span class="year">Septiembre 2024</span>
+                                <h3 data-key="exp_1_title">Estudiante TI Ingreso</h3>
+                                <p data-key="exp_1_desc">Ingreso a UPSIN Sinaloa.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <span class="year">2024-2025</span>
+                                <h3 data-key="exp_2_title">Cursos Cisco</h3>
+                                <p data-key="exp_2_desc">Módulos de redes, routing y fundamentos de linux.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <span class="year">Enero 2025</span>
+                                <h3 data-key="exp_3_title">Estudiante TI. 2.º Cuatrimestre</h3>
+                                <p data-key="exp_3_desc">Cursando en UPSIN el 2.º Cuatrimestre, trabajando con sistemas operativos, programación estructurada y conmutación y enrutamiento de redes, etc.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <span class="year">Mayo 2025</span>
+                                <h3 data-key="exp_4_title">Estudiante TI. 3.º Cuatrimestre</h3>
+                                <p data-key="exp_4_desc">Cursando en UPSIN el 3.º Cuatrimestre, programacón orientada a objetos, base de datos, etc.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <span class="year">Septiembre 2025</span>
+                                <h3 data-key="exp_5_title">Estudiante TI. 4.º Cuatrimestre</h3>
+                                <p data-key="exp_5_desc">Cursando en UPSIN el 4.º Cuatrimestre, trabajando con aplicaciones web, estructura de datos, desarrollo de aplicaciones móviles, etc.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <span class="year">2025</span>
+                                <h3 data-key="exp_6_title">Cursos de Cisco</h3>
+                                <p data-key="exp_6_desc">Cisco Networking Academy, cursos de HTML/CSS, ciberseguridad y ciencia de datos.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <span class="year">2026</span>
+                                <h3 data-key="exp_7_title">Estudiante TI. 5.º Cuatrimestre</h3>
+                                <p data-key="exp_7_desc">Cursando en UPSIN el 5.º Cuatrimestre, trabajando con aplicaciones web orientadas a servicios, bases de datos avanzadas, estándares y métricas para el desarrollo de Software, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title" data-key="cert_title">Certificaciones</h2>
+                <div class="certs-grid">
+                    <a href="certificates/Conciencia digital.pdf" target="_blank" class="cert-item">
+                        <img src="certificates/Conciencia digital.jpg" alt="Conciencia Digital">
+                        <p class="cert-title">Conciencia Digital</p>
+                    </a>
+                    <a href="certificates/Using Computer and Mobile Devices.pdf" target="_blank" class="cert-item">
+                        <img src="certificates/Using Computer and Mobile Devices.jpg" alt="Using Devices">
+                        <p class="cert-title">Using Devices</p>
+                    </a>
+                    <a href="certificates/CCNA Introduction to Networks.pdf" target="_blank" class="cert-item">
+                        <img src="certificates/CCNA_ Introduction to Networks.jpg" alt="CCNA Intro">
+                        <p class="cert-title">CCNA: Intro</p>
+                    </a>
+                    <a href="certificates/CCNA Switching, Routing, and .pdf" target="_blank" class="cert-item">
+                        <img src="certificates/CCNA_ Switching, Routing, and Wireless Essentials.jpg" alt="CCNA Switching">
+                        <p class="cert-title">CCNA: Switching</p>
+                    </a>
+                    <a href="certificates/Conceptos básicos de redes.pdf" target="_blank" class="cert-item">
+                        <img src="certificates/Conceptos básicos de redes.jpg" alt="Redes Básicas">
+                        <p class="cert-title">Redes Básicas</p>
+                    </a>
+                    <a href="certificates/Fundamentos de Linux.pdf" target="_blank" class="cert-item">
+                        <img src="certificates/Fundamentos de Linux.jpg" alt="Linux">
+                        <p class="cert-title">Linux</p>
+                    </a>
+                    <a href="certificates/HTML_Essentials.pdf" target="_blank" class="cert-item">
+                        <img src="certificates/HTML Essentials.jpg" alt="Linux">
+                        <p class="cert-title">HTML Essentials</p>
+                    </a>
+                    <a href="certificates/CSS Essentials.pdf" target="_blank" class="cert-item">
+                        <img src="certificates/CSS Essentials.jpg" alt="Linux">
+                        <p class="cert-title">CSS Essentials</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="timeline-card contact-card-bg">
+                    <h2 class="section-title" data-key="contact_title">Contacto</h2>
+                    <div class="contact-grid quadruple-grid">
+                        
+                        <div class="contact-item email-box">
+                            <h3 data-key="contact_institutional_title">Correo Institucional</h3>
+                            <p data-key="contact_institutional_desc">Correo oficial para asuntos universitarios.</p>
+                            <a href="mailto:2024030451@upsin.edu.mx" class="btn-primary btn-contact" data-key="send_institutional_email">Enviar Correo</a>
+                            <p class="email-address" data-key="contact_institutional_email">2024030451@upsin.edu.mx</p>
+                        </div>
+                        
+                        <div class="contact-item email-box">
+                            <h3 data-key="contact_personal_title">Correo Profesional</h3>
+                            <p data-key="contact_personal_desc">Para ofertas de trabajo o proyectos freelance.</p>
+                            <a href="mailto:alejandro.murillo.amd@gmail.com" class="btn-primary btn-contact" data-key="send_personal_email">Enviar Correo</a>
+                            <p class="email-address" data-key="contact_personal_email">alejandro.murillo.amd@gmail.com</p>
+                        </div>
+
+                        <div class="contact-item social-box">
+                            <h3 data-key="contact_linkedin_title">LinkedIn</h3>
+                            <p data-key="contact_linkedin_desc">Conectemos para oportunidades profesionales.</p>
+                            <a href="https://www.linkedin.com/in/alejandro-murillo-amd" target="_blank" class="linkedin-icon-large" data-key="contact_linkedin_link">
+                                <i class="devicon-linkedin-plain"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact-item social-box">
+                            <h3 data-key="contact_gitlab_title">GitLab</h3>
+                            <p data-key="contact_gitlab_desc">Revisa mis repositorios y contribuciones de código.</p>
+                            <a href="https://gitlab.com/alex.murillo.diaz" target="_blank" class="gitlab-icon-large" data-key="contact_gitlab_link">
+                                <i class="devicon-gitlab-plain"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact-item social-box">
+                            <h3 data-key="contact_github_title">GitHub</h3>
+                            <p data-key="contact_github_desc">Revisa mis repositorios y contribuciones de código.</p>
+                            <a href="https://github.com/alexmurillo44" target="_blank" class="github-icon-large" data-key="contact_github_link">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="year">2026</span> <span data-key="name">Alejandro Murillo Díaz</span>. <span data-key="footer_rights">Todos los derechos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
