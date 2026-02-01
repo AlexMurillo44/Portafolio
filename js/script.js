@@ -45,6 +45,8 @@ const translations = {
         "exp_5_desc": "Cursando en UPSIN el 4.º Cuatrimestre, trabajando con aplicaciones web, estructura de datos, desarrollo de aplicaciones móviles, etc.",
         "exp_6_title": "Cursos de Cisco",
         "exp_6_desc": "Cisco Networking Academy, cursos de HTML/CSS, ciberseguridad y ciencia de datos.",
+        "exp_7_title": "Estudiante TI. 5.º Cuatrimestre",
+        "exp_7_desc": "Cursando en UPSIN el 5.º Cuatrimestre, trabajando con aplicaciones web orientadas a servicios, bases de datos avanzadas, estándares y métricas para el desarrollo de Software, etc.",
         "cert_title": "Certificaciones",
         "contact_title": "Contacto",
         "contact_institutional_title": "Correo Institucional",
@@ -61,6 +63,8 @@ const translations = {
         "contact_gitlab_title": "GitLab",
         "contact_gitlab_desc": "Revisa mis repositorios y contribuciones de código.",
         "contact_gitlab_link": "",
+        "contact_github_title": "GitHub",
+        "contact_github_desc": "Revisa mis repositorios y contribuciones de código.",
         "footer_rights": "Todos los derechos reservados.",
         "typed_words": ["Software", "Web", "Móvil"]
     },
@@ -110,6 +114,8 @@ const translations = {
         "exp_5_desc": "Currently in the 4th Period at UPSIN, working with web applications, data structures, mobile application development, etc.",
         "exp_6_title": "Cisco Courses",
         "exp_6_desc": "Cisco Networking Academy courses in HTML/CSS, cybersecurity, and data science.",
+        "exp_7_title": "IT Student. 5th Period (4 Months)",
+        "exp_7_desc": "Currently in the 5th Period at UPSIN, working with service-oriented web applications, advanced databases, standards and metrics for Software Development, etc.",
         "cert_title": "Certifications",
         "contact_title": "Contact",
         "contact_institutional_title": "Institutional Email",
@@ -126,6 +132,8 @@ const translations = {
         "contact_gitlab_title": "GitLab",
         "contact_gitlab_desc": "Check my repositories and code contributions.",
         "contact_gitlab_link": "",
+        "contact_github_title": "GitHub",
+        "contact_github_desc": "Check my repositories and code contributions.",
         "footer_rights": "All rights reserved.",
         "typed_words": ["Software", "Web", "Mobile"]
     },
@@ -175,6 +183,8 @@ const translations = {
         "exp_5_desc": "Actualmente a la 4e Période à UPSIN, travaillant sur les applications web, les structures de données, le développement d'applications mobiles, etc.",
         "exp_6_title": "Cours Cisco",
         "exp_6_desc": "Cisco Networking Academy courses in HTML/CSS, cybersécurité y science des données.",
+        "exp_7_title": "Étudiant TI. 5e Période (4 Mois)",
+        "exp_7_desc": "Actuellement à la 5e Période à UPSIN, travaillant sur les applications web orientées services, les bases de données avancées, les normes et métriques pour le développement logiciel, etc.",
         "cert_title": "Certifications",
         "contact_title": "Contact",
         "contact_institutional_title": "Courriel Institutionnel",
@@ -191,6 +201,8 @@ const translations = {
         "contact_gitlab_title": "GitLab",
         "contact_gitlab_desc": "Consultez mes dépôts et contributions de code.",
         "contact_gitlab_link": "",
+        "contact_github_title": "GitHub",
+        "contact_github_desc": "Consultez mes dépôts et contributions de code.",
         "footer_rights": "Tous droits réservés.",
         "typed_words": ["Logiciel", "Web", "Mobile"]
     }
